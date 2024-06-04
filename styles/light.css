@@ -1,12 +1,35 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --size-mobil: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --size-deskop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --bg-cover: url(../images/cover-image-light.png);
+  --main-font: IBM Plex mono;
+  --bg-color: #FFEEF6;
+  --text-color: #353430;
+  --accent-color: #FF8DCB;
+  --decor-color: #353430;
+  --title-color: #353430;
+  --accent-color-hover: #32312D66;
+  --color-heading: #FFC2E6;
+  --size-padding: clamp(10px, 2.65vi, 20px);
+  --size-margin: clamp(40px, 0.1145rem + 10.1781vw, 60px);
+  --visibility: hidden;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --size-mobil: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    --size-deskop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --bg-cover: url(../images/cover-image-light.png);
+    --main-font: IBM Plex mono;
+    --bg-color: #FFEEF6;
+    --text-color: #353430;
+    --accent-color: #FF8DCB;
+    --decor-color: #353430;
+    --title-color: #353430;
+    --accent-color-hover: #32312D66;
+    --color-heading: #FFC2E6;
+    --size-padding: clamp(10px, 2.65vi, 20px);
+    --size-margin: clamp(40px, 0.1145rem + 10.1781vw, 60px);
+    --visibility: hidden;
+  }
 }

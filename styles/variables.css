@@ -1,4 +1,16 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+:root {
+  --size-mobil: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --size-deskop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --bg-cover: url(../images/cover-image-dark.png);
+  --main-font: IBM Plex mono;
+  --bg-color: #000028;
+  --text-color: #F1B2CE;
+  --accent-color: #FF0070;
+  --decor-color: #FF0070;
+  --title-color: #000028;
+  --accent-color-hover: #FF007066;
+  --color-heading: #DB00FF;
+  --size-padding: clamp(10px, 2.65vi, 20px);
+  --size-margin: clamp(40px, 0.1145rem + 10.1781vw, 60px);
+  --visibility: visible;
+}
