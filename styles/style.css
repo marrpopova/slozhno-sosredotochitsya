@@ -5,6 +5,7 @@
   background-size: cover;
   background-attachment: fixed;
   padding: var(--size-padding); 
+  margin: 0 auto;
 }
 
 /*шапка*/
